@@ -1,65 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лёгкие деньги</title>
     <style>
         body {
-            background-color: #00FF00; /* зеленый фон */
-        }
-        .header {
-            background-color: #008000; /* зеленый заголовок */
-            color: #FFFFFF;
+            background-color: lime;
+            font-family: 'Comic Sans MS', cursive;
             text-align: center;
-            padding: 20px;
-            font-size: 24px;
         }
-        .content {
-            padding: 20px;
+        h1 {
+            color: yellow;
         }
-        .sidebar {
-            float: left;
-            width: 30%;
-            background-color: #32CD32; /* зеленый боковой блок */
-            padding: 15px;
+        .button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 2px solid yellow;
         }
-        .main {
-            float: left;
-            width: 70%;
-            background-color: #ADFF2F; /* зеленый основной блок */
-            padding: 15px;
+        .button:hover {
+            background-color: yellow;
+            color: black;
         }
-        .footer {
-            background-color: #006400; /* зеленый футер */
-            color: #FFFFFF;
-            text-align: center;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            padding: 10px;
-        }
+        .blinking-button {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
     </style>
 </head>
 <body>
-    <div class="header">Лёгкие деньги</div>
-    <div class="content">
-        <div class="sidebar">
-            <h2>Меню</h2>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </div>
-        <div class="main">
-            <h2>Добро пожаловать</h2>
-            <p>Добро пожаловать на наш сайт "Лёгкие деньги". Здесь вы найдете все, что нужно для быстрой и легкой заработка.</p>
-            <p>Просто заполните форму и начинайте зарабатывать прямо сейчас!</p>
-    <form>
-      <input type="text" placeholder="Введите ваш email"><br><br>
-      <input type="submit" value="Зарабатывать">
-    </form>
-        </div>
-    </div>
-    <div class="footer">Копирайт &copy; 1999 Лёгкие деньги</div>
+    <h1>Добро пожаловать на сайт "Лёгкие деньги"!</h1>
+    <p>Мы поможем вам заработать легкие деньги просто нажмите на кнопку ниже!</p>
+    <a href="https://gayshok.github.io/antimem/" <button class="blinking-button">ЗАРАБАТЫВАТЬ</button>
 </body>
 </html>
